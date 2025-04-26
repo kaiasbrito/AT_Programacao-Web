@@ -1,0 +1,55 @@
+<!-- 6. Crie um grid de usando “display: grid” com 300px 200px100px 600px, dentro de um container que ocupe a tela cheia com “display: block”, pinte o background, com gap de 20px. -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questão 6 - DR1 - AT</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        display: block;
+        height: 100vh;
+        background-color: rgb(15, 15, 15);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 300px 200px 100px 600px;
+        gap: 20px;
+        margin: 50px;
+      }
+
+      .box {
+        background-color: crimson;
+        padding: 20px;
+        height: 200px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script src="script.js"></script>
+    <div class="container">
+      <div class="grid">
+        <div class="box">Item 1 (300px)</div>
+        <div class="box">Item 2 (200px)</div>
+        <div class="box">Item 3 (100px)</div>
+        <div class="box">Item 4 (600px)</div>
+      </div>
+      <div class="grid">
+        <div class="box">Item 5 (300px)</div>
+        <div class="box">Item 6 (200px)</div>
+        <div class="box">Item 7 (100px)</div>
+        <div class="box">Item 8 (600px)</div>
+      </div>
+    </div>
+  </body>
+</html>

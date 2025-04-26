@@ -1,0 +1,142 @@
+<!-- 14. Crie uma quarta página ligada às três primeiras e salve como download.html, crie um grid de 4x4 e usando flex-box, e dentro dos boxes crie links cegos para downloads inexistentes. -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questão 14 - DR1 - AT</title>
+    <style>
+      header {
+        text-align: center;
+        color: midnightblue;
+        padding: 10px;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      nav {
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+      }
+      nav ul {
+        list-style-type: none;
+        background-color: midnightblue;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      nav a {
+        text-decoration: none;
+        color: white;
+        padding: 15px;
+        display: flex;
+        text-align: center;
+      }
+      nav a:hover {
+        background-color: rgb(4, 4, 96);
+      }
+      nav li {
+        float: left;
+      }
+      footer {
+        background-color: midnightblue;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        display: block;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        margin: 40px;
+        width: auto;
+      }
+      .box {
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Header</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./fotos.html">Fotos</a></li>
+        <li><a href="./formulario.html">Formulário</a></li>
+        <li><a href="./downloads.html">Downloads</a></li>
+      </ul>
+    </nav>
+
+    <div class="grid-container">
+      <div class="box">
+        <a href="#">Download 1</a>
+      </div>
+      <div class="box">
+        <a href="#">Download 2</a>
+      </div>
+      <div class="box">
+        <a href="#">Download 3</a>
+      </div>
+      <div class="box">
+        <a href="#">Download 4</a>
+      </div>
+      <div class="box">
+        <a href="#">Download 5</a>
+      </div>
+      <div class="box">
+        <a href="#">Download 6</a>
+      </div>
+      <div class="box">
+        <a href="#">Download 7</a>
+      </div>
+      <div class="box">
+        <a href="#">Download 8</a>
+      </div>
+
+      <div class="box">
+        <a href="#">Download 9</a>
+      </div>
+      <div class="box">
+        <a href="#">Download 10</a>
+      </div>
+      <div class="box">
+        <a href="#">Download 11</a>
+      </div>
+      <div class="box">
+        <a href="#">Download 12</a>
+      </div>
+
+      <div class="box">
+        <a href="#">Download 13</a>
+      </div>
+      <div class="box">
+        <a href="#">Download 14</a>
+      </div>
+      <div class="box">
+        <a href="#">Download 15</a>
+      </div>
+      <div class="box">
+        <a href="#">Download 16</a>
+      </div>
+    </div>
+
+    <footer>
+      <h3>Footer</h3>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!--5. Usando HTML com CSS, crie uma landpage que envie nome e email do usuário para: Marcelo Loureiro.-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questão 5 - DR1 - AT</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: royalblue;
+            color: white;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .form{
+            background-color: white;
+            width: 20em;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+        }
+        .form input, .form textarea{
+            width: 90%;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 10px;
+            border: 1px solid royalblue;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        button{
+          margin-top: 5px;
+        }
+    </style>
+  </head>
+
+  <body>
+    <h1>Enviador de spam</h1>
+    <div class="form">
+      <form action="https://airform.io/marcelo.loureiro@prof.infnet.edu.br" method="post">
+      <input type="text" name="nome" placeholder="Digite seu nome"><br>
+      <textarea name="e-mail" placeholder="Digite seu email"></textarea>
+      <button>Enviar</button>
+    </div>
+  </body>
+</html>

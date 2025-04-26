@@ -1,77 +1,104 @@
+<!-- 2. Usando HTML com CSS, crie uma página Web, usando box-model e position, com header fixo, content e footer. -->
+
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infnet - Questão 2</title>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questão 2 - DR1 - AT</title>
     <style>
-        .caixa {
-            border: 1px dotted white;
-            padding: 10px;
-            margin-bottom: 10px;
-            overflow: auto;
-        }
-        .caixa_pequena {
-            width: 250px;
-            height: 250px;
-            background-color: cornflowerblue;
-        }
-       
-        .caixa_media {
-            width: 300px;
-            height: 300px;
-            background-color: salmon;
-        }
-        
-        .caixa_grande {
-            width: 350px;
-            height: 350px;
-            background-color: palegoldenrod;
-        }
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #191825;
+      }
+      header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #865dff;
+        color: whitesmoke;
+        text-align: center;
+        padding: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      main {
+        margin-top: 100px;
+        margin-bottom: 10px;
+        padding: 20px;
+        color: whitesmoke;
+        display: flex;
+        flex-direction: row;
+      }
+      footer {
+        background-color: #865dff;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        bottom: 0;
+        width: 100%;
+        height: fit-content;
+        position: fixed;
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .content-box {
+        border: 1px solid whitesmoke;
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        line-height: 1.5em;
+      }
+      #box1 {
+        margin-right: 20px;
+      }
     </style>
-</head>
-
-<body>
-    <div class="caixa caixa_pequena">
-        <h2>J. R. R. Tolien</h2>
-        <ul>
-            <li>O Silmarillion (1977)</li>
-            <li>O Hobbit (1937)</li>
-            <li>O Senhor dos Anéis:
-                <ul>
-                    <li>A Sociedade do Anel(1954)</li>
-                    <li>As Duas Torres(1954)</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-
-    <div class="caixa caixa_media">
-        <h2>George R. R. Martin</h2>
-        <ul>
-            <li>Guerra dos Tronos (1996)</li>
-            <li>A fúria dos Reis (1998) </li>
-            <li>Coleção Dunk e Egg:
-                <ul>
-                    <li>O Cavaleiro Andante (1998)</li>
-                    <li>A Espada Juramentada (2003)</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-
-    <div class="caixa caixa_grande">
-        <h2>Anne Rice</h2>
-        <ul>
-            <li>The Witching Hour (1990) </li>
-            <li>Os Desejos da Bela Adormecida (1983)</li>
-            <li>As Crônicas Vampirescas:
-                <ul>
-                    <li>Entrevista com o Vampiro (1976)</li>
-                    <li>O Vampiro Lestat (1985)
-                </ul>
-            </li>
-        </ul>
-    </div>
-</body>
+  </head>
+  <body>
+    <header>
+      <h1>Header Fixo</h1>
+    </header>
+    <main>
+      <div class="content-box" id="box1">
+        <h2>Subtítulo 1</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ex,
+          ipsam soluta rem veritatis delectus, voluptatum quisquam dolorem
+          possimus quidem aperiam sunt officiis harum quibusdam? Cum unde illo
+          necessitatibus dolorem. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Accusamus necessitatibus atque neque sunt facere
+          esse cupiditate alias rem molestias recusandae magnam nisi possimus ut
+          tempora reprehenderit deleniti, autem, eum modi?
+        </p>
+      </div>
+      <div class="content-box">
+        <h2>Subtítulo 2</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem error
+          maxime illo quaerat, itaque eveniet aperiam a excepturi, consequatur
+          aspernatur dolore saepe tempora totam quis perspiciatis cumque debitis
+          tempore repudiandae. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Laboriosam animi, et corrupti possimus voluptates
+          harum laborum minima velit nostrum a, tempore voluptatum, assumenda
+          expedita illo sunt dignissimos similique saepe non! Lorem ipsum dolor,
+          sit amet consectetur adipisicing elit. Ullam suscipit est hic? Id
+          porro assumenda nesciunt fugiat! Laudantium enim explicabo dolores a
+          minus perspiciatis impedit, nostrum asperiores quibusdam cum
+          distinctio. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Voluptas enim libero quas dolore temporibus explicabo, aperiam iusto.
+          Qui, reprehenderit architecto natus adipisci expedita itaque earum
+          commodi in magnam asperiores! Ea.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <p>
+        Footer<br />Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Fuga aut ratione itaque obcaecati! Similique distinctio vel numquam
+        recusandae. Repellendus laboriosam molestiae alias explicabo cupiditate
+        esse recusandae voluptas perspiciatis necessitatibus quae?
+      </p>
+    </footer>
+  </body>
 </html>

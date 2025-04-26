@@ -1,0 +1,53 @@
+<!-- 10. O que faz o seguinte código? -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Erro Sutil no Design</title>
+    <style>
+      body {
+        /* define a fonte, a cor de fundo, margem, o alcolchoamento e o alinhamento do texto em escopo global */
+        font-family: Arial, sans-serif;
+        background-color: #f0f8ff;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      .container {
+        /* personaliza o container onde o conteúdo principal está localizado*/
+        width: 90%;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .box {
+        /* personaliza cada caixa de conteúdo de maneira universal */
+        width: 300px;
+        height: 300px;
+        background-color: #ffcccb;
+        border: 2px solid #333;
+        display: inline-block; /* exibe as caixas lado a lado, podendo torna-las vertical linha a linha pois responde ao tamanho da tela */
+        margin: 10px;
+      }
+
+      /* ERRO SUTIL: Aqui o "padding" foi aplicado ao container */
+      .container {
+        padding: 20px; /* Padding afeta o design ao adicionar espaço extra */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- cria o container e dentro dele caixas -->
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

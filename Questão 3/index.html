@@ -1,14 +1,111 @@
+<!-- 3. Usando HTML com CSS, crie uma página Web, com oito sessões de conteúdo, e use Links âncora para navegação entre eles. -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infnet - Questão 3</title>
-    <link rel="Texto" href="style_texto.css">
-    <link rel="Design" href="style_design.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questão 3 - DR1 - AT</title>
+    <style>
+      body {
+        font-family: Tahoma, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ecdfcc;
+      }
+      header {
+        color: #fb773c;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      nav {
+        background-color: #181c14;
+        color: #ecdfcc;
+        padding: 10px;
+        font-weight: bold;
+      }
+      main {
+        padding: 40px;
+      }
+      ul {
+        list-style: none;
+      }
+      nav ul {
+        list-style-type: none;
+        margin: 5px;
+        padding: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      nav ul li {
+        margin-right: 12px;
+      }
+      nav ul li a {
+        color: #ecdfcc;
+        text-decoration: none;
+      }
+      nav ul li a:hover {
+        color: #fb773c;
+      }
+      section {
+        padding: 20px;
+        height: fit-content;
+        border: 1px solid #697565;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+      section h2 {
+        color: #3c3d37;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <header id="title">TÍTULO</header>
+        <li><a href="#section1"> Seção 1 </a></li>
+        <li><a href="#section2"> Seção 2 </a></li>
+        <li><a href="#section3"> Seção 3 </a></li>
+        <li><a href="#section4"> Seção 4 </a></li>
+        <li><a href="#section5"> Seção 5 </a></li>
+        <li><a href="#section6"> Seção 6 </a></li>
+        <li><a href="#section7"> Seção 7 </a></li>
+        <li><a href="#section8"> Seção 8 </a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="section1">
+        <h2>Seção 1</h2>
+      </section>
 
-<body>
-    
-</body>
+      <section id="section2">
+        <h2>Seção 2</h2>
+      </section>
+
+      <section id="section3">
+        <h2>Seção 3</h2>
+      </section>
+
+      <section id="section4">
+        <h2>Seção 4</h2>
+      </section>
+
+      <section id="section5">
+        <h2>Seção 5</h2>
+      </section>
+
+      <section id="section6">
+        <h2>Seção 6</h2>
+      </section>
+
+      <section id="section7">
+        <h2>Seção 7</h2>
+      </section>
+
+      <section id="section8">
+        <h2>Seção 8</h2>
+      </section>
+    </main>
+  </body>
 </html>

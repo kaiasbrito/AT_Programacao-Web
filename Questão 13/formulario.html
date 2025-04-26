@@ -1,0 +1,128 @@
+<!-- 13. Crie uma terceira página ligada às duas primeiras e salve como formulário.html, e nela crie um <form> com Nome, E-mail, telefone, e mensagem.-->
+
+    <!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questão 13 - DR1 - AT</title>
+    <style>
+      header {
+        text-align: center;
+        color: midnightblue;
+        padding: 10px;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      nav {
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+      }
+      nav ul {
+        list-style-type: none;
+        background-color: midnightblue;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      nav a {
+        text-decoration: none;
+        color: white;
+        padding: 15px;
+        display: flex;
+        text-align: center;
+      }
+      nav a:hover {
+        background-color: rgb(4, 4, 96);
+      }
+      nav li {
+        float: left;
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 71vh;
+      }
+      .form {
+        background-color: white;
+        width: 20em;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .form input,
+      .form textarea {
+        width: 90%;
+        padding: 10px;
+        margin: 5px 0;
+        border-radius: 10px;
+        border: 1px solid royalblue;
+      }
+      .form button {
+        margin-top: 5px;
+        padding: 5px;
+        width: 100%;
+        background-color: royalblue;
+        color: white;
+        border-radius: 10px;
+      }
+      .form button:hover {
+        background-color: rgb(4, 4, 96);
+        cursor: pointer;
+      }
+      footer {
+        background-color: midnightblue;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Header</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./fotos.html">Fotos</a></li>
+        <li><a href="./formulario.html">Formulário</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="form">
+        <form action="#" method="post">
+          <input type="text" name="nome" placeholder="Seu Nome" />
+          <input type="email" name="email" placeholder="Seu email" />
+          <input type-="text" name="telefone" placeholder="Seu telefone" />
+          <textarea name="mensagem" placeholder="Sua mensagem"></textarea>
+          <button>Enviar</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <h3>Footer</h3>
+    </footer>
+  </body>
+</html>
