@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Questão 16 - DR1 - AT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    * {
+      font-family: 'Lexend Deca', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+    }
+    body {
+      background-color: rgb(15, 15, 15);
+      width: 100%;
+      height: 100vh;
+      color: cornsilk;
+    }
+    header {
+      position: absolute;
+      margin-top: 20px;
+      top: 0;
+      width: 100%;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+    .logo {
+      font-size: 20px;
+      color: crimson;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 5px;
+    }
+    .logo:hover {
+      border-left: 4px solid cornsilk;
+      transition: 0.3s;
+    }
+    nav {
+      position: absolute;
+      display: block;
+      top: 0;
+      right: 0;
+      padding: 5px;
+      width: 40%;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a{
+      display: block;
+      color: cornsilk;
+      margin: 10px;
+      }
+    nav a:hover{
+      color: crimson;
+      border-bottom: 2px solid crimson;
+      transition: 0.3s;
+    }
+    nav a:active{
+      color: crimson;
+    }
+    nav ul{
+      display: flex;
+      list-style: none;
+      justify-content: space-evenly;
+    }
+    section{
+    height: 100vh;
+    }
+    .home{
+    display: grid;
+    grid-template-columns: 270px 700px;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    line-height: 1.5;
+}
+.home .home-conteudo h1{
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1.0;
+    margin-bottom: 30px;
+    color: crimson;
+}
+    .home-img img{
+    position: relative;
+    width: 330px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s linear;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+    .home-img img:hover{
+    border: 3px solid cornsilk;
+    }
+    .social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    float:left;
+    width: 40px; height: 40px;
+    background-color: transparent;
+    font-size: 30px;
+    color: crimson;
+    border-radius: 50%;
+    border: 1px solid crimson;
+    margin-top: 15px; margin-right: 15px;
+}
+.social-media a:hover{
+    color: cornsilk;
+    background-color: crimson;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.45) 25px 25px 20px 20px;
+}
+footer a{
+    color: cornsilk;
+    font-style: oblique;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">Kaia Santos - Portfólio</a>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sobre mim</a></li>
+        <li><a href="#">Projetos</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="home">
+    <div class="home-img"><img src="photo_5021656697579613280_c.jpg" alt="Kaia"></div>
+    <div class="home-conteudo">
+      <h1>Olá! Me chamo <br>Kaia.</h1>
+      <h3 class="texto">Sou estudante de TI e profissional de Design.</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, inventore explicabo alias quibusdam culpa voluptatibus perferendis autem enim temporibus natus a officiis qui sint optio nobis est dicta dignissimos impedit!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aperiam nobis vitae magnam explicabo ad velit aliquid delectus rerum sint? Odit nisi eaque pariatur! Facere quibusdam quo expedita omnis nostrum.
+      </p>
+      <div class="social-media">
+        <a href="https://www.linkedin.com/in/claudersbrito/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/claudersbrito"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <a href="mailto:clauder.brito@al.infnet.edu.br">clauder.brito@al.infnet.edu.br</a>
+  </footer>
+</body>
+<!-- usando position:absolute, e relative. -->
+</html>
